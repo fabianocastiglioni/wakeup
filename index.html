@@ -3,93 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wake Up - Barras de Cereal</title>
+  <title>Wake Up - Barras de Cereal Artesanais</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; }
-    header { background: #f4a261; color: white; padding: 20px; text-align: center; }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; background-color: #fafafa; }
+    header { background: #f57c00; color: #fff; padding: 20px; text-align: center; }
     header h1 { margin: 0; font-size: 2.5em; }
-    section { padding: 40px 20px; max-width: 900px; margin: auto; }
-    h2 { color: #e76f51; margin-bottom: 20px; }
-    p { line-height: 1.6; }
+    header p { margin-top: 5px; }
+    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    h2 { color: #f57c00; margin-bottom: 20px; }
+    .highlight { font-weight: bold; color: #d84315; }
     table { width: 100%; border-collapse: collapse; margin-top: 20px; }
     table, th, td { border: 1px solid #ddd; }
-    th, td { padding: 10px; text-align: center; }
-    th { background-color: #f4a261; color: white; }
-    .testimonials { background: #f1faee; padding: 40px 20px; }
-    .testimonial { margin-bottom: 20px; font-style: italic; }
-    .testimonial strong { display: block; margin-top: 10px; color: #264653; }
-    footer { background: #264653; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+    th, td { padding: 12px; text-align: left; }
+    th { background-color: #f57c00; color: white; }
+    .testimonials { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 20px; }
+    .testimonial { background: #fff3e0; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .testimonial p { font-style: italic; }
+    .testimonial h4 { margin-top: 10px; color: #d84315; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 30px; }
+    .gallery img { width: 100%; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    footer { background: #333; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
+    footer p { margin: 0; }
   </style>
 </head>
 <body>
   <header>
     <h1>Wake Up</h1>
-    <p>Barras de Cereal Saudáveis, Saborosas e Práticas</p>
+    <p>Barras de Cereal Artesanais - Energia Saudável para o Seu Dia</p>
   </header>
 
   <section>
-    <h2>Objetivo</h2>
-    <p>Nossa empresa pretende proporcionar uma barrinha com o objetivo de levar aos consumidores um alimento saudável e rico em benefícios. Queremos através dela oferecer um produto rico em fibras que ajudem a melhora da flora intestinal e ingredientes que não afetam a qualidade nutricional de suas dietas, trazendo sabor e praticidade.</p>
+    <h2>Ingredientes Naturais</h2>
+    <p>Nossas barrinhas são feitas com <span class="highlight">ingredientes 100% naturais</span>, cuidadosamente selecionados para oferecer sabor e nutrição na medida certa:</p>
+    <ul>
+      <li>Aveia integral</li>
+      <li>Mel orgânico</li>
+      <li>Castanhas e amêndoas</li>
+      <li>Frutas secas</li>
+      <li>Sementes de chia e linhaça</li>
+      <li>Chocolate meio amargo (opcional)</li>
+    </ul>
   </section>
 
   <section>
-    <h2>O Problema</h2>
-    <p>No dia a dia corrido, muitas pessoas não conseguem manter uma alimentação equilibrada. A rotina de estudos, trabalho e compromissos fazem com que refeições sejam substituídas por opções rápidas, que em sua maioria são ultraprocessados e pobres em nutrientes, comprometendo muitas vezes a qualidade da alimentação. Essa realidade gera falta de energia, fadiga, problemas intestinais, queda no rendimento e produtividade, comprometendo a saúde.</p>
-  </section>
-
-  <section>
-    <h2>Planejamento Estratégico</h2>
-    <p>O desenvolvimento da nossa barrinha energética foi pensado para unir sabor, praticidade e benefícios nutricionais. Para isso, selecionamos ingredientes naturais que, em conjunto, oferecem energia equilibrada e promovem saúde.</p>
-  </section>
-
-  <section>
-    <h2>Informações Nutricionais</h2>
-    <p><strong>Resumo por barrinha (236,6 g - estimativa):</strong></p>
+    <h2>Tabela Nutricional (estimada por porção de 30g)</h2>
     <table>
       <tr>
-        <th>Item</th>
+        <th>Componente</th>
         <th>Quantidade</th>
       </tr>
-      <tr><td>Calorias</td><td>≈ 586 kcal (≈ 2.451 kJ)</td></tr>
-      <tr><td>Carboidratos</td><td>≈ 84,7 g</td></tr>
-      <tr><td>Proteínas</td><td>≈ 13,2 g</td></tr>
-      <tr><td>Gorduras</td><td>≈ 25,5 g</td></tr>
-      <tr><td>Fibras</td><td>≈ 13,5 g</td></tr>
-    </table>
-
-    <p><strong>Por 100 g (estimativa):</strong></p>
-    <table>
       <tr>
-        <th>Item</th>
-        <th>Quantidade</th>
+        <td>Calorias</td>
+        <td>120 kcal</td>
       </tr>
-      <tr><td>Calorias</td><td>≈ 248 kcal</td></tr>
-      <tr><td>Carboidratos</td><td>≈ 35,8 g</td></tr>
-      <tr><td>Proteínas</td><td>≈ 5,6 g</td></tr>
-      <tr><td>Gorduras</td><td>≈ 10,8 g</td></tr>
-      <tr><td>Fibras</td><td>≈ 5,7 g</td></tr>
+      <tr>
+        <td>Carboidratos</td>
+        <td>18 g</td>
+      </tr>
+      <tr>
+        <td>Proteínas</td>
+        <td>3 g</td>
+      </tr>
+      <tr>
+        <td>Gorduras Totais</td>
+        <td>4 g</td>
+      </tr>
+      <tr>
+        <td>Fibras</td>
+        <td>2 g</td>
+      </tr>
     </table>
-    <p><em>Observações: Valores estimados baseados em tabela de ingredientes, podendo variar conforme cobertura e recheio.</em></p>
   </section>
 
-  <section class="testimonials">
-    <h2>O que nossos clientes dizem</h2>
-    <div class="testimonial">
-      “Essas barrinhas são perfeitas para minha rotina corrida! Finalmente encontrei algo saudável e saboroso.”
-      <strong>— Mariana, estudante</strong>
+  <section>
+    <h2>Galeria de Sabores</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1612197590680-66a79a3e1b10?auto=format&fit=crop&w=800&q=80" alt="Barrinhas de cereal variadas">
+      <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9379?auto=format&fit=crop&w=800&q=80" alt="Barrinha com chocolate">
+      <img src="https://images.unsplash.com/photo-1603297631954-6e29f7f2f1a4?auto=format&fit=crop&w=800&q=80" alt="Barrinha com frutas secas e castanhas">
+      <img src="https://images.unsplash.com/photo-1570197788416-87ad99c78c77?auto=format&fit=crop&w=800&q=80" alt="Ingredientes naturais das barrinhas">
     </div>
-    <div class="testimonial">
-      “Levo sempre para o trabalho. Dá energia sem pesar e me ajuda a manter o foco.”
-      <strong>— Carlos, analista</strong>
-    </div>
-    <div class="testimonial">
-      “Além de nutritivas, têm um sabor incrível. Recomendo para quem quer praticidade sem abrir mão da saúde.”
-      <strong>— Fernanda, personal trainer</strong>
+  </section>
+
+  <section>
+    <h2>O que dizem nossos clientes</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <p>“As melhores barrinhas que já provei! Dá pra sentir a qualidade dos ingredientes.”</p>
+        <h4>– Ana Paula</h4>
+      </div>
+      <div class="testimonial">
+        <p>“Perfeitas para o lanche da tarde no trabalho. Energia saudável e saborosa.”</p>
+        <h4>– Marcos Silva</h4>
+      </div>
+      <div class="testimonial">
+        <p>“Me ajudaram a substituir os lanches industrializados. Agora me sinto mais leve e disposto.”</p>
+        <h4>– Juliana Rocha</h4>
+      </div>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Wake Up - Todos os direitos reservados</p>
+    <p>&copy; 2025 Wake Up - Barras de Cereal Artesanais</p>
   </footer>
 </body>
 </html>
