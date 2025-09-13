@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Wake Up — Barras Saudáveis de Cereal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{ --accent:#FF7A00; --dark:#111; --muted:#6b7280; --card:#fff; }
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; color:var(--dark); background:linear-gradient(180deg,#fafafa,#f3f4f6)}
+    header{display:flex;align-items:center;justify-content:space-between;padding:28px 6%;background:#fff;box-shadow:0 4px 18px rgba(15,23,42,0.06)}
+    .logo{display:flex;align-items:center;gap:12px}
+    .logo h1{margin:0;font-size:20px;letter-spacing:0.6px}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+
+    .hero{display:flex;gap:40px;align-items:center;padding:56px 6%;}
+    .hero .copy{max-width:640px}
+    .hero h2{font-size:34px;margin:0 0 12px}
+    .hero p{color:var(--muted);line-height:1.6}
+    .cta{margin-top:20px}
+    .btn{background:var(--accent);color:#fff;padding:12px 20px;border-radius:12px;border:none;font-weight:700;cursor:pointer}
+    .secondary{background:transparent;border:2px solid #e6e7ea;color:var(--dark);padding:10px 18px;border-radius:12px;margin-left:12px}
+
+    .hero img{width:420px;max-width:40vw;border-radius:12px;box-shadow:0 10px 30px rgba(15,23,42,0.12)}
+
+    .section{padding:36px 6%}
+    .card{background:var(--card);border-radius:12px;padding:22px;box-shadow:0 6px 18px rgba(15,23,42,0.05);margin-bottom:18px}
+
+    .grid{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:start}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}.hero{flex-direction:column-reverse;text-align:center}.hero img{max-width:80vw}.logo h1{font-size:18px}}
+
+    table{width:100%;border-collapse:collapse}
+    th,td{padding:10px 12px;border-bottom:1px solid #eef2f6;text-align:left}
+    th{background:#fafafa;font-weight:700}
+
+    .nutri-list{list-style:none;padding:0;margin:0}
+    .nutri-list li{padding:8px 0;font-weight:600}
+
+    footer{padding:26px 6%;color:var(--muted);font-size:14px}
+
+    .highlight{color:var(--accent);font-weight:800}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:#fff;border:1px solid #f1f1f1;margin-right:8px;font-weight:600}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <div style="width:52px;height:52px;border-radius:10px;background:linear-gradient(135deg,#ffb27a,#ff7a00);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:18px">WU</div>
+      <div>
+        <h1>Wake Up</h1>
+        <div style="color:var(--muted);font-size:13px">Barras naturais de cereal — energia e sabor</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#ingredientes">Ingredientes</a>
+      <a href="#nutricao">Nutrição</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="copy">
+      <h2>Wake Up — sua barra de cereal para energia, praticidade e saúde</h2>
+      <p>Desenvolvemos uma barrinha pensada para unir sabor, praticidade e benefícios nutricionais. Selecionamos ingredientes naturais que, em conjunto, oferecem energia equilibrada e ajudam a manter o bem-estar intestinal, sem comprometer a qualidade da sua dieta.</p>
+      <div class="cta">
+        <button class="btn">Peça uma amostra</button>
+        <button class="secondary">Baixar ficha técnica (PDF)</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="section">
+    <div class="card">
+      <h3 style="margin-top:0">Por que Wake Up?</h3>
+      <p style="color:var(--muted)">No dia a dia corrido, muitas pessoas substituem refeições por opções rápidas que costumam ser ultraprocessadas e pobres em nutrientes. Wake Up nasce para oferecer uma alternativa prática, saborosa e rica em fibras — pensada para melhorar a energia, reduzir a fadiga e apoiar a saúde intestinal e a produtividade.</p>
+    </div>
+
+    <div class="grid">
+      <div>
+        <div class="card">
+          <h4 style="margin-top:0">Planejamento estratégico</h4>
+          <p style="color:var(--muted)">Nossa receita foi desenvolvida para unir sabor, praticidade e benefícios nutricionais. Ingredientes naturais foram selecionados para fornecer energia equilibrada e promover saúde.</p>
+        </div>
+
+        <div id="ingredientes" class="card">
+          <h4 style="margin-top:0">Ingredientes (por ordem aproximada)</h4>
+          <table>
+            <thead>
+              <tr><th>Ingrediente</th><th>Descrição / Observação</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Aveia em flocos</td><td>Fonte de carboidratos complexos e fibras solúveis</td></tr>
+              <tr><td>Pasta de amendoim</td><td>Gorduras saudáveis e sabor concentrado</td></tr>
+              <tr><td>Mel ou xarope natural</td><td>Adoçante natural e aglutinante da barra</td></tr>
+              <tr><td>Geleia de frutas (recheio)</td><td>Toque de doçura e sabor; pode ser opcional</td></tr>
+              <tr><td>Cobertura de chocolate</td><td>Acrescente sabor e textura agradável</td></tr>
+              <tr><td>Sementes (chia / linhaça)</td><td>Ricas em fibras, ômega-3 e minerais</td></tr>
+              <tr><td>Castanhas (nozes / amêndoas)</td><td>Fonte de proteínas e gorduras insaturadas</td></tr>
+              <tr><td>Proteína (ervilha/whey opcional)</td><td>Aumenta o teor proteico por porção</td></tr>
+              <tr><td>Pitadas de sal e extratos naturais</td><td>Realçam sabores; sem conservantes artificiais</td></tr>
+            </tbody>
+          </table>
+          <p style="margin-top:12px;color:var(--muted);font-size:13px">*Ingredientes listados a título indicativo com base na formulação desenvolvida. Ajustes e variações são possíveis para atender restrições alimentares.</p>
+        </div>
+
+        <div class="card">
+          <h4 style="margin-top:0">Observações</h4>
+          <ul style="color:var(--muted);line-height:1.6">
+            <li>Valores nutricionais são estimativas baseadas em tabelas de composição de ingredientes e podem variar conforme cobertura/recheio.</li>
+            <li>A cobertura de chocolate e a pasta de amendoim podem aumentar o teor calórico — oferecemos versões com e sem cobertura.</li>
+          </ul>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h4 style="margin-top:0">Resumo por barrinha (estimativa)</h4>
+          <ul class="nutri-list">
+            <li>Peso total aproximado: <strong>236,6 g</strong></li>
+            <li>Calorias: <strong>≈ 586 kcal (≈ 2.451 kJ)</strong></li>
+            <li>Carboidratos: <strong>≈ 84,7 g</strong></li>
+            <li>Proteínas: <strong>≈ 13,2 g</strong></li>
+            <li>Gorduras: <strong>≈ 25,5 g</strong></li>
+            <li>Fibras: <strong>≈ 13,5 g</strong></li>
+          </ul>
+        </div>
+
+        <div id="nutricao" class="card">
+          <h4 style="margin-top:0">Por 100 g (estimado)</h4>
+          <ul class="nutri-list">
+            <li>Kcal: <strong>≈ 248 kcal / 100 g</strong></li>
+            <li>Carboidratos: <strong>≈ 35,8 g / 100 g</strong></li>
+            <li>Proteínas: <strong>≈ 5,6 g / 100 g</strong></li>
+            <li>Gorduras: <strong>≈ 10,8 g / 100 g</strong></li>
+            <li>Fibras: <strong>≈ 5,7 g / 100 g</strong></li>
+          </ul>
+          <p style="color:var(--muted);font-size:13px;margin-top:10px">Valores estimados conforme ficha técnica — adequados para informar consumidores. Consulte a versão oficial para rotulagem.</p>
+        </div>
+
+        <div class="card">
+          <h4 style="margin-top:0">Benefícios</h4>
+          <p style="color:var(--muted)">Energia de liberação lenta, alto teor de fibras para suporte intestinal, combinação de proteínas e gorduras saudáveis para saciedade e melhora do rendimento diário.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="card">
+      <h3 style="margin-top:0">Como consumir</h3>
+      <p style="color:var(--muted)">Perfeita para lanches entre refeições, antes de atividades físicas leves ou como complemento a uma rotina corrida. Recomendamos combinar com uma fruta ou iogurte para uma refeição mais completa.</p>
+    </div>
+
+    <div class="card" style="display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap">
+      <div>
+        <h4 style="margin:0">Pronto para experimentar?</h4>
+        <p style="color:var(--muted);margin:6px 0 0">Solicite agora uma amostra ou fale com nosso time de vendas para pedidos corporativos.</p>
+      </div>
+      <div>
+        <button class="btn">Pedir amostra</button>
+        <button class="secondary">Fale conosco</button>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contato">
+    <div style="display:flex;justify-content:space-between;gap:18px;align-items:center;flex-wrap:wrap">
+      <div>
+        <strong>Wake Up</strong><br>
+        Rua Exemplo, 123 — São Paulo, SP<br>
+        contato@wakeup.com | +55 (11) 9xxxx-xxxx
+      </div>
+      <div style="text-align:right;color:var(--muted)">
+        © 2025 Wake Up — Todas as marcas reservadas
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
